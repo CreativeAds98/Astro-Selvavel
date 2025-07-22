@@ -948,15 +948,7 @@ a {
   padding: 60px 0;
 }
 
-/* Grid Layout Similar to .youtube-grid */
-.review-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 2 per row */
-  gap: 48px;
-  max-width: 1400px;
-  margin: auto;
-  padding: 0 30px;
-}
+
 
 /* Card Styling Similar to .youtube-box */
 /* Section Background */
