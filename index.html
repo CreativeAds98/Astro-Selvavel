@@ -15,6 +15,81 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
+    <style>
+/* Testimonial gallery section */
+/* Review Gallery Container */
+#review-gallery {
+  background-color: #111;
+  padding: 60px 0;
+}
+
+
+
+/* Card Styling Similar to .youtube-box */
+/* Section Background */
+
+#review-gallery h2 {
+  color: #fff;
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 2.4rem;
+} 
+#review-gallery {
+  background-color: transparent;
+  padding: 60px 0;
+}
+
+/* Fixed Grid with 5 per row */
+.review-grid-fixed {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 per row */
+  gap: 48px;
+  max-width: 1400px;
+  margin: auto;
+  padding: 0 30px;
+}
+
+/* Card Styling */
+.review-card-fixed {
+  background-color: #181818;
+  border-radius: 20px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+  padding: 20px;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.review-card-fixed img {
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.review-card-fixed:hover {
+  transform: scale(1.03);
+}
+
+.review-card-fixed:hover img {
+  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+}
+
+/* Scroll horizontally on smaller screens */
+@media (max-width: 992px) {
+  .review-grid-fixed {
+    overflow-x: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 16px;
+  }
+
+  .review-card-fixed {
+    flex: 0 0 auto;
+    max-width: 180px;
+  }
+}
+      </style>
     <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
   </head>
   <body>
