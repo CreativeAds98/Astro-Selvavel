@@ -75,20 +75,18 @@
   box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
 }
 
-/* Scroll horizontally on smaller screens */
 @media (max-width: 992px) {
   .review-grid-fixed {
-    overflow-x: auto;
-    display: flex;
-    flex-wrap: nowrap;
-    gap: 16px;
+    display: block; /* Stack cards vertically */
+    overflow-x: unset; /* Disable horizontal scroll */
   }
 
   .review-card-fixed {
-    flex: 0 0 auto;
-    max-width: 180px;
+    max-width: 100%; /* Take full width of container */
+    margin-bottom: 16px; /* Add space between cards */
   }
 }
+
       </style>
     <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
   </head>
@@ -453,7 +451,7 @@
                 <span
                   ><i class="fa-solid fa-location-dot text-white"></i> 
                   Selvavel Jothida Nilayam,
-                  111/153, Pankaja Mills Road Jem Hospital Oppsite ,
+                  111/153, Pankaja Mills Road Jem Hospital Opposite ,
                   Ramanathapuram, Coimbatore, Tamil Nadu 641045.</span>
                
               </li>
