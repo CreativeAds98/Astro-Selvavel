@@ -941,4 +941,12 @@ a {
   }
 }
 
+.footer-end a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-end a:hover {
+    text-decoration: none;
+}
 
